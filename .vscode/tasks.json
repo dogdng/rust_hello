@@ -1,0 +1,105 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "check hello",
+            "type": "shell",
+            "command": "cargo",
+            "args": [
+                "check"
+            ],
+            "group": "build",
+            "presentation": {
+                "reveal": "silent"
+            },
+            "options": {
+                "cwd": "./hello"
+            },
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "build release hello",
+            "type": "shell",
+            "command": "cargo",
+            "args": [
+                "build",
+                "--release"
+            ],
+            "group": "build",
+            "presentation": {
+                "reveal": "silent"
+            },
+            "options": {
+                "cwd": "./hello"
+            },
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "run hello",
+            "type": "shell",
+            "command": "cargo",
+            "args": [
+                "run"
+            ],
+            "group": "build",
+            "presentation": {
+                "reveal": "silent"
+            },
+            "options": {
+                "cwd": "./hello"
+            },
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "check guess_name",
+            "type": "shell",
+            "command": "cargo",
+            "args": [
+                "check"
+            ],
+            "group": "build",
+            "presentation": {
+                "reveal": "silent"
+            },
+            "options": {
+                "cwd": "./guess_name"
+            },
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "build release guess_name",
+            "type": "shell",
+            "command": "cargo",
+            "args": [
+                "build",
+                "--release"
+            ],
+            "group": "build",
+            "presentation": {
+                "reveal": "silent"
+            },
+            "options": {
+                "cwd": "./guess_name"
+            },
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "run guess_name",
+            "type": "shell",
+            "command": "cargo",
+            "args": [
+                "run"
+            ],
+            "group": "build",
+            "presentation": {
+                "reveal": "silent"
+            },
+            "options": {
+                "cwd": "./guess_name"
+            },
+            "problemMatcher": "$msCompile"
+        }
+    ]
+}
